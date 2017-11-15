@@ -12,14 +12,18 @@ import UIKit
 
 class RegistroMascotaController: UIViewController {
     @IBOutlet var nombreMascota: UITextField!
-    @IBOutlet weak var btnSexo: DLRadioButton!
+   
     @IBOutlet weak var edad: UITextField!
-    @IBOutlet weak var btnTipo: DLRadioButton!
+    
     @IBOutlet weak var txtRaza: UITextField!
     
     @IBOutlet weak var pickerRaza: UIPickerView!
-    var sexo: String = ""
-    var tipo: String = ""
+    
+    @IBOutlet weak var sexo: UISegmentedControl!
+    
+    @IBOutlet weak var tipo: UISegmentedControl!
+    var selSexo: String = ""
+    var selTipo: String = ""
     var razaperros = ["Akita","Pastor Aleman","Schnauzer"]
     var razagatos = ["Abisinio","Persa","Egipcio"]
     
@@ -28,33 +32,45 @@ class RegistroMascotaController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @IBAction func selectSexo(_ sender: DLRadioButton) {
-        if sender.tag == 1 {
-            sexo = "m"
-        }else if sender.tag == 2 {
-            sexo = "h"
-        }
-    }
-    @IBAction func selectTipo(_ sender: DLRadioButton) {
-        if sender.tag == 3 {
-            tipo = "p"
-        }else if sender.tag == 4 {
-            tipo = "g"
-        }
-    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func SexoSelected(_ sender: Any) {
+        switch sexo.selectedSegmentIndex
+        {
+        case 0:
+            selSexo = "m"
+        case 1:
+            selSexo = "h"
+        default:
+            break
+        }
+    }
+    
+    
+    @IBAction func TipoSelected(_ sender: Any) {
+        switch tipo.selectedSegmentIndex
+        {
+        case 0:
+            selTipo = "p"
+        case 1:
+            selTipo = "g"
+        default:
+            break
+        }
+    }
     public func numberOfComponents(in pickerView: UIPickerView) -> Int{
         return 1
     }
     
     public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
-        if tipo == "p" {
+        if selTipo == "p" {
             return razaperros.count
-        }else if tipo == "g" {
+        }else if selTipo == "g" {
         return razagatos.count
         } else {
             return 0
@@ -64,10 +80,10 @@ class RegistroMascotaController: UIViewController {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         self.view.endEditing(true)
-        if tipo == "p" {
+        if selTipo == "p" {
             return razaperros[row]
         }
-        else if tipo == "g" {
+        else if selTipo == "g" {
             return razagatos[row]
         }else {
             return ""
@@ -75,10 +91,10 @@ class RegistroMascotaController: UIViewController {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if tipo == "p"{
+        if selTipo == "p"{
             self.txtRaza.text = self.razaperros[row]
             self.pickerRaza.isHidden = true
-        }else if tipo == "g"{
+        }else if selTipo == "g"{
             self.txtRaza.text = self.razagatos[row]
             self.pickerRaza.isHidden = true
         }

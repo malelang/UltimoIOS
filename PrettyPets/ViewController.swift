@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var username: UITextField!
-    @IBOutlet var password: UITextField!
+   
+    @IBOutlet weak var username: UITextField!
+    
+    @IBOutlet weak var password: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +25,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func goToRegister(_ sender: UIButton) {
-    }
     
 }
 

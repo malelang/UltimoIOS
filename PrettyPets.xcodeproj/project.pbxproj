@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A2E1CFC1FB27FAD00E04419 /* PerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2E1CFB1FB27FAD00E04419 /* PerfilController.swift */; };
-		1A2E1CFE1FB2801500E04419 /* BitacoraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2E1CFD1FB2801500E04419 /* BitacoraController.swift */; };
-		1A2E1D001FB2803400E04419 /* VeterinarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2E1CFF1FB2803400E04419 /* VeterinarioController.swift */; };
 		1A34751D1FB162F4007E3E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A34751C1FB162F4007E3E32 /* AppDelegate.swift */; };
 		1A34751F1FB162F4007E3E32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A34751E1FB162F4007E3E32 /* ViewController.swift */; };
 		1A3475221FB162F4007E3E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3475201FB162F4007E3E32 /* Main.storyboard */; };
@@ -18,9 +15,8 @@
 		1A34752A1FB162F4007E3E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3475281FB162F4007E3E32 /* LaunchScreen.storyboard */; };
 		1A3475351FB162F4007E3E32 /* PrettyPetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3475341FB162F4007E3E32 /* PrettyPetsTests.swift */; };
 		1A3475401FB162F4007E3E32 /* PrettyPetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A34753F1FB162F4007E3E32 /* PrettyPetsUITests.swift */; };
-		1A34E9661FB2AADC009DD989 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A34E9651FB2AADC009DD989 /* DLRadioButton.m */; };
-		1A3F50B71FB2679900C05BD8 /* RegistroUsuarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F50B61FB2679900C05BD8 /* RegistroUsuarioController.swift */; };
-		1A3F50B91FB267B500C05BD8 /* RegistroMascotaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F50B81FB267B500C05BD8 /* RegistroMascotaController.swift */; };
+		1A77CE711FBB928600767576 /* RegistroUsuarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77CE701FBB928600767576 /* RegistroUsuarioController.swift */; };
+		1A77CE731FBB954000767576 /* RegistroMascotaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77CE721FBB954000767576 /* RegistroMascotaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A2E1CFB1FB27FAD00E04419 /* PerfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilController.swift; sourceTree = "<group>"; };
-		1A2E1CFD1FB2801500E04419 /* BitacoraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitacoraController.swift; sourceTree = "<group>"; };
-		1A2E1CFF1FB2803400E04419 /* VeterinarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinarioController.swift; sourceTree = "<group>"; };
 		1A3475191FB162F4007E3E32 /* PrettyPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettyPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A34751C1FB162F4007E3E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A34751E1FB162F4007E3E32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,11 +51,8 @@
 		1A34753B1FB162F4007E3E32 /* PrettyPetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrettyPetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A34753F1FB162F4007E3E32 /* PrettyPetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyPetsUITests.swift; sourceTree = "<group>"; };
 		1A3475411FB162F4007E3E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A34E9631FB2AADB009DD989 /* PrettyPets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrettyPets-Bridging-Header.h"; sourceTree = "<group>"; };
-		1A34E9641FB2AADC009DD989 /* DLRadioButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
-		1A34E9651FB2AADC009DD989 /* DLRadioButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
-		1A3F50B61FB2679900C05BD8 /* RegistroUsuarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroUsuarioController.swift; sourceTree = "<group>"; };
-		1A3F50B81FB267B500C05BD8 /* RegistroMascotaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroMascotaController.swift; sourceTree = "<group>"; };
+		1A77CE701FBB928600767576 /* RegistroUsuarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroUsuarioController.swift; sourceTree = "<group>"; };
+		1A77CE721FBB954000767576 /* RegistroMascotaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroMascotaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,19 +105,13 @@
 			children = (
 				1A34751C1FB162F4007E3E32 /* AppDelegate.swift */,
 				1A34751E1FB162F4007E3E32 /* ViewController.swift */,
-				1A3F50B61FB2679900C05BD8 /* RegistroUsuarioController.swift */,
-				1A3F50B81FB267B500C05BD8 /* RegistroMascotaController.swift */,
-				1A2E1CFB1FB27FAD00E04419 /* PerfilController.swift */,
-				1A2E1CFD1FB2801500E04419 /* BitacoraController.swift */,
-				1A2E1CFF1FB2803400E04419 /* VeterinarioController.swift */,
 				1A3475201FB162F4007E3E32 /* Main.storyboard */,
 				1A3475261FB162F4007E3E32 /* Assets.xcassets */,
+				1A77CE701FBB928600767576 /* RegistroUsuarioController.swift */,
+				1A77CE721FBB954000767576 /* RegistroMascotaController.swift */,
 				1A3475281FB162F4007E3E32 /* LaunchScreen.storyboard */,
-				1A34E9641FB2AADC009DD989 /* DLRadioButton.h */,
-				1A34E9651FB2AADC009DD989 /* DLRadioButton.m */,
 				1A34752B1FB162F4007E3E32 /* Info.plist */,
 				1A3475231FB162F4007E3E32 /* PrettyPets.xcdatamodeld */,
-				1A34E9631FB2AADB009DD989 /* PrettyPets-Bridging-Header.h */,
 			);
 			path = PrettyPets;
 			sourceTree = "<group>";
@@ -285,15 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A3F50B71FB2679900C05BD8 /* RegistroUsuarioController.swift in Sources */,
-				1A3F50B91FB267B500C05BD8 /* RegistroMascotaController.swift in Sources */,
-				1A2E1D001FB2803400E04419 /* VeterinarioController.swift in Sources */,
 				1A34751F1FB162F4007E3E32 /* ViewController.swift in Sources */,
-				1A34E9661FB2AADC009DD989 /* DLRadioButton.m in Sources */,
+				1A77CE731FBB954000767576 /* RegistroMascotaController.swift in Sources */,
+				1A77CE711FBB928600767576 /* RegistroUsuarioController.swift in Sources */,
 				1A34751D1FB162F4007E3E32 /* AppDelegate.swift in Sources */,
 				1A3475251FB162F4007E3E32 /* PrettyPets.xcdatamodeld in Sources */,
-				1A2E1CFC1FB27FAD00E04419 /* PerfilController.swift in Sources */,
-				1A2E1CFE1FB2801500E04419 /* BitacoraController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
