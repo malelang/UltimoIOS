@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0FB9651FBE49C10020434F /* PerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FB9641FBE49C10020434F /* PerfilController.swift */; };
+		1A0FB9671FBE49E10020434F /* VeterinarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FB9661FBE49E10020434F /* VeterinarioController.swift */; };
 		1A34751D1FB162F4007E3E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A34751C1FB162F4007E3E32 /* AppDelegate.swift */; };
 		1A34751F1FB162F4007E3E32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A34751E1FB162F4007E3E32 /* ViewController.swift */; };
 		1A3475221FB162F4007E3E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3475201FB162F4007E3E32 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0FB9641FBE49C10020434F /* PerfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilController.swift; sourceTree = "<group>"; };
+		1A0FB9661FBE49E10020434F /* VeterinarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinarioController.swift; sourceTree = "<group>"; };
 		1A3475191FB162F4007E3E32 /* PrettyPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettyPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A34751C1FB162F4007E3E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A34751E1FB162F4007E3E32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +112,9 @@
 				1A3475201FB162F4007E3E32 /* Main.storyboard */,
 				1A3475261FB162F4007E3E32 /* Assets.xcassets */,
 				1A77CE701FBB928600767576 /* RegistroUsuarioController.swift */,
+				1A0FB9661FBE49E10020434F /* VeterinarioController.swift */,
 				1A77CE721FBB954000767576 /* RegistroMascotaController.swift */,
+				1A0FB9641FBE49C10020434F /* PerfilController.swift */,
 				1A3475281FB162F4007E3E32 /* LaunchScreen.storyboard */,
 				1A34752B1FB162F4007E3E32 /* Info.plist */,
 				1A3475231FB162F4007E3E32 /* PrettyPets.xcdatamodeld */,
@@ -273,7 +279,9 @@
 				1A77CE731FBB954000767576 /* RegistroMascotaController.swift in Sources */,
 				1A77CE711FBB928600767576 /* RegistroUsuarioController.swift in Sources */,
 				1A34751D1FB162F4007E3E32 /* AppDelegate.swift in Sources */,
+				1A0FB9671FBE49E10020434F /* VeterinarioController.swift in Sources */,
 				1A3475251FB162F4007E3E32 /* PrettyPets.xcdatamodeld in Sources */,
+				1A0FB9651FBE49C10020434F /* PerfilController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

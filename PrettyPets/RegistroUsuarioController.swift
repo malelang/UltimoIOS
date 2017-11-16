@@ -21,7 +21,7 @@ class RegistroUsuarioController: UIViewController {
     @IBOutlet weak var pickerEdad: UIPickerView!
     @IBOutlet weak var genero: UISegmentedControl!
     
-    var edades = ["18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50"]
+  //  var edades = ["18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50"]
     var gender = ""
     
 
@@ -47,40 +47,6 @@ class RegistroUsuarioController: UIViewController {
         }
     }
     
-    public func numberOfComponents(in pickerView: UIPickerView) -> Int{
-        return 1
-    }
     
-    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
-        
-        return edades.count
-        
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        
-        self.view.endEditing(true)
-        return edades[row]
-        
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
-        self.edad.text = self.edades[row]
-        self.pickerEdad.isHidden = true
-        
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        
-        if textField == self.edad {
-            self.pickerEdad.isHidden = false
-            textField.endEditing(true)
-        }
-        
-    }
-    
-    @IBAction func goToRegister(_ sender: UIButton) {
-    }
     
 }
