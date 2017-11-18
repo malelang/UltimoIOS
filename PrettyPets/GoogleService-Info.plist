@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>56466611130-rauqj2drcmt4hu0fpb3ka45rvllqaen4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.56466611130-rauqj2drcmt4hu0fpb3ka45rvllqaen4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDrkTcvlGv7mHNakU5ZQld-Zz9mbnjd7CA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>56466611130</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.lordfaraon.ex1</string>
+	<key>PROJECT_ID</key>
+	<string>prettypets-652fe</string>
+	<key>STORAGE_BUCKET</key>
+	<string>prettypets-652fe.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:56466611130:ios:f70714a43f828552</string>
+	<key>DATABASE_URL</key>
+	<string>https://prettypets-652fe.firebaseio.com</string>
+</dict>
+</plist>

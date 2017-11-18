@@ -23,6 +23,10 @@
 		1AC642F11FBFFCCE00FD5290 /* ActualizarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC642F01FBFFCCE00FD5290 /* ActualizarController.swift */; };
 		1AC642F31FBFFDA800FD5290 /* AddVacunaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC642F21FBFFDA800FD5290 /* AddVacunaController.swift */; };
 		1AC642F51FBFFE5500FD5290 /* AddMascotaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC642F41FBFFE5500FD5290 /* AddMascotaController.swift */; };
+		9DCEE035B62685A09243D244 /* Pods_PrettyPetsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E71EE9F9F3DCE08C694225 /* Pods_PrettyPetsUITests.framework */; };
+		BEAB740DF1E2E8F44465F9FE /* Pods_PrettyPetsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC2410EFF99D76FBC4541A8 /* Pods_PrettyPetsTests.framework */; };
+		CC1222CC4614A569CE209185 /* Pods_PrettyPets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08363AC3221262CF56C29744 /* Pods_PrettyPets.framework */; };
+		E5A4B20A1FC0DF30000D07D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5A4B2091FC0DF30000D07D9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08363AC3221262CF56C29744 /* Pods_PrettyPets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrettyPets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A0FB9641FBE49C10020434F /* PerfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilController.swift; sourceTree = "<group>"; };
 		1A0FB9661FBE49E10020434F /* VeterinarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinarioController.swift; sourceTree = "<group>"; };
 		1A3475191FB162F4007E3E32 /* PrettyPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettyPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +70,15 @@
 		1AC642F01FBFFCCE00FD5290 /* ActualizarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarController.swift; sourceTree = "<group>"; };
 		1AC642F21FBFFDA800FD5290 /* AddVacunaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVacunaController.swift; sourceTree = "<group>"; };
 		1AC642F41FBFFE5500FD5290 /* AddMascotaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMascotaController.swift; sourceTree = "<group>"; };
+		356895E6CF099FA9D984F507 /* Pods-PrettyPetsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPetsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrettyPetsUITests/Pods-PrettyPetsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5856C13EF281F9012D8FD05A /* Pods-PrettyPets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrettyPets/Pods-PrettyPets.debug.xcconfig"; sourceTree = "<group>"; };
+		8FC2410EFF99D76FBC4541A8 /* Pods_PrettyPetsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrettyPetsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B89E044E00674856DCA4E9 /* Pods-PrettyPetsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPetsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrettyPetsTests/Pods-PrettyPetsTests.release.xcconfig"; sourceTree = "<group>"; };
+		93E71EE9F9F3DCE08C694225 /* Pods_PrettyPetsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrettyPetsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB773A0EA7F8E76F848C6628 /* Pods-PrettyPetsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPetsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrettyPetsUITests/Pods-PrettyPetsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E169A61097A3ED2570470D7F /* Pods-PrettyPets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPets.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrettyPets/Pods-PrettyPets.release.xcconfig"; sourceTree = "<group>"; };
+		E5A4B2091FC0DF30000D07D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EE740A0C191357F81D1EC224 /* Pods-PrettyPetsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPetsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrettyPetsTests/Pods-PrettyPetsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1222CC4614A569CE209185 /* Pods_PrettyPets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEAB740DF1E2E8F44465F9FE /* Pods_PrettyPetsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DCEE035B62685A09243D244 /* Pods_PrettyPetsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +116,8 @@
 				1A3475331FB162F4007E3E32 /* PrettyPetsTests */,
 				1A34753E1FB162F4007E3E32 /* PrettyPetsUITests */,
 				1A34751A1FB162F4007E3E32 /* Products */,
+				E78222E18855476BD1BBF73A /* Pods */,
+				ACDDFD4A4B0FAD234047BC44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +143,7 @@
 				1A36D52C1FBFE47A0096CF20 /* BitacoraController.swift */,
 				1A3475281FB162F4007E3E32 /* LaunchScreen.storyboard */,
 				1A34752B1FB162F4007E3E32 /* Info.plist */,
+				E5A4B2091FC0DF30000D07D9 /* GoogleService-Info.plist */,
 				1A3475231FB162F4007E3E32 /* PrettyPets.xcdatamodeld */,
 				1A36D5281FBFE2000096CF20 /* RegUsuarioController.swift */,
 				1A36D52A1FBFE3E90096CF20 /* RegMascotaController.swift */,
@@ -152,6 +172,29 @@
 			path = PrettyPetsUITests;
 			sourceTree = "<group>";
 		};
+		ACDDFD4A4B0FAD234047BC44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08363AC3221262CF56C29744 /* Pods_PrettyPets.framework */,
+				8FC2410EFF99D76FBC4541A8 /* Pods_PrettyPetsTests.framework */,
+				93E71EE9F9F3DCE08C694225 /* Pods_PrettyPetsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E78222E18855476BD1BBF73A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5856C13EF281F9012D8FD05A /* Pods-PrettyPets.debug.xcconfig */,
+				E169A61097A3ED2570470D7F /* Pods-PrettyPets.release.xcconfig */,
+				EE740A0C191357F81D1EC224 /* Pods-PrettyPetsTests.debug.xcconfig */,
+				90B89E044E00674856DCA4E9 /* Pods-PrettyPetsTests.release.xcconfig */,
+				CB773A0EA7F8E76F848C6628 /* Pods-PrettyPetsUITests.debug.xcconfig */,
+				356895E6CF099FA9D984F507 /* Pods-PrettyPetsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A3475441FB162F4007E3E32 /* Build configuration list for PBXNativeTarget "PrettyPets" */;
 			buildPhases = (
+				67923012D04FF390AC88E711 /* [CP] Check Pods Manifest.lock */,
 				1A3475151FB162F4007E3E32 /* Sources */,
 				1A3475161FB162F4007E3E32 /* Frameworks */,
 				1A3475171FB162F4007E3E32 /* Resources */,
+				F38DDC5FB804A64358E3D5DB /* [CP] Embed Pods Frameworks */,
+				9312239344F606BCB6A5D160 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A3475471FB162F4007E3E32 /* Build configuration list for PBXNativeTarget "PrettyPetsTests" */;
 			buildPhases = (
+				68A442D8E2B7A24CC9E64F73 /* [CP] Check Pods Manifest.lock */,
 				1A34752C1FB162F4007E3E32 /* Sources */,
 				1A34752D1FB162F4007E3E32 /* Frameworks */,
 				1A34752E1FB162F4007E3E32 /* Resources */,
+				3683466801FFE8F4AB9D4F3E /* [CP] Embed Pods Frameworks */,
+				7534F60D8201673A5CE3D6A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A34754A1FB162F4007E3E32 /* Build configuration list for PBXNativeTarget "PrettyPetsUITests" */;
 			buildPhases = (
+				5B05748DE1ED215E34827D61 /* [CP] Check Pods Manifest.lock */,
 				1A3475371FB162F4007E3E32 /* Sources */,
 				1A3475381FB162F4007E3E32 /* Frameworks */,
 				1A3475391FB162F4007E3E32 /* Resources */,
+				6E90A0F154632E80BA4CC497 /* [CP] Embed Pods Frameworks */,
+				E074CB65D061337F22FECB90 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A34752A1FB162F4007E3E32 /* LaunchScreen.storyboard in Resources */,
+				E5A4B20A1FC0DF30000D07D9 /* GoogleService-Info.plist in Resources */,
 				1A3475271FB162F4007E3E32 /* Assets.xcassets in Resources */,
 				1A3475221FB162F4007E3E32 /* Main.storyboard in Resources */,
 			);
@@ -281,6 +334,162 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3683466801FFE8F4AB9D4F3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrettyPetsTests/Pods-PrettyPetsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B05748DE1ED215E34827D61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrettyPetsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67923012D04FF390AC88E711 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrettyPets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68A442D8E2B7A24CC9E64F73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrettyPetsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E90A0F154632E80BA4CC497 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrettyPetsUITests/Pods-PrettyPetsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7534F60D8201673A5CE3D6A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrettyPetsTests/Pods-PrettyPetsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9312239344F606BCB6A5D160 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrettyPets/Pods-PrettyPets-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E074CB65D061337F22FECB90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrettyPetsUITests/Pods-PrettyPetsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F38DDC5FB804A64358E3D5DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PrettyPets/Pods-PrettyPets-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrettyPets/Pods-PrettyPets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A3475151FB162F4007E3E32 /* Sources */ = {
@@ -461,6 +670,7 @@
 		};
 		1A3475451FB162F4007E3E32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5856C13EF281F9012D8FD05A /* Pods-PrettyPets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -479,6 +689,7 @@
 		};
 		1A3475461FB162F4007E3E32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E169A61097A3ED2570470D7F /* Pods-PrettyPets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -496,6 +707,7 @@
 		};
 		1A3475481FB162F4007E3E32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE740A0C191357F81D1EC224 /* Pods-PrettyPetsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +725,7 @@
 		};
 		1A3475491FB162F4007E3E32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B89E044E00674856DCA4E9 /* Pods-PrettyPetsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +743,7 @@
 		};
 		1A34754B1FB162F4007E3E32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB773A0EA7F8E76F848C6628 /* Pods-PrettyPetsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +760,7 @@
 		};
 		1A34754C1FB162F4007E3E32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 356895E6CF099FA9D984F507 /* Pods-PrettyPetsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
