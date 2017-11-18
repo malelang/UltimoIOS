@@ -17,8 +17,12 @@
 		1A34752A1FB162F4007E3E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3475281FB162F4007E3E32 /* LaunchScreen.storyboard */; };
 		1A3475351FB162F4007E3E32 /* PrettyPetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3475341FB162F4007E3E32 /* PrettyPetsTests.swift */; };
 		1A3475401FB162F4007E3E32 /* PrettyPetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A34753F1FB162F4007E3E32 /* PrettyPetsUITests.swift */; };
-		1A77CE711FBB928600767576 /* RegistroUsuarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77CE701FBB928600767576 /* RegistroUsuarioController.swift */; };
-		1A77CE731FBB954000767576 /* RegistroMascotaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77CE721FBB954000767576 /* RegistroMascotaController.swift */; };
+		1A36D5291FBFE2000096CF20 /* RegUsuarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A36D5281FBFE2000096CF20 /* RegUsuarioController.swift */; };
+		1A36D52B1FBFE3E90096CF20 /* RegMascotaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A36D52A1FBFE3E90096CF20 /* RegMascotaController.swift */; };
+		1A36D52D1FBFE47A0096CF20 /* BitacoraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A36D52C1FBFE47A0096CF20 /* BitacoraController.swift */; };
+		1AC642F11FBFFCCE00FD5290 /* ActualizarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC642F01FBFFCCE00FD5290 /* ActualizarController.swift */; };
+		1AC642F31FBFFDA800FD5290 /* AddVacunaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC642F21FBFFDA800FD5290 /* AddVacunaController.swift */; };
+		1AC642F51FBFFE5500FD5290 /* AddMascotaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC642F41FBFFE5500FD5290 /* AddMascotaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +59,12 @@
 		1A34753B1FB162F4007E3E32 /* PrettyPetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrettyPetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A34753F1FB162F4007E3E32 /* PrettyPetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyPetsUITests.swift; sourceTree = "<group>"; };
 		1A3475411FB162F4007E3E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A77CE701FBB928600767576 /* RegistroUsuarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroUsuarioController.swift; sourceTree = "<group>"; };
-		1A77CE721FBB954000767576 /* RegistroMascotaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroMascotaController.swift; sourceTree = "<group>"; };
+		1A36D5281FBFE2000096CF20 /* RegUsuarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegUsuarioController.swift; sourceTree = "<group>"; };
+		1A36D52A1FBFE3E90096CF20 /* RegMascotaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegMascotaController.swift; sourceTree = "<group>"; };
+		1A36D52C1FBFE47A0096CF20 /* BitacoraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitacoraController.swift; sourceTree = "<group>"; };
+		1AC642F01FBFFCCE00FD5290 /* ActualizarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarController.swift; sourceTree = "<group>"; };
+		1AC642F21FBFFDA800FD5290 /* AddVacunaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVacunaController.swift; sourceTree = "<group>"; };
+		1AC642F41FBFFE5500FD5290 /* AddMascotaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMascotaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,13 +119,17 @@
 				1A34751E1FB162F4007E3E32 /* ViewController.swift */,
 				1A3475201FB162F4007E3E32 /* Main.storyboard */,
 				1A3475261FB162F4007E3E32 /* Assets.xcassets */,
-				1A77CE701FBB928600767576 /* RegistroUsuarioController.swift */,
 				1A0FB9661FBE49E10020434F /* VeterinarioController.swift */,
-				1A77CE721FBB954000767576 /* RegistroMascotaController.swift */,
 				1A0FB9641FBE49C10020434F /* PerfilController.swift */,
+				1A36D52C1FBFE47A0096CF20 /* BitacoraController.swift */,
 				1A3475281FB162F4007E3E32 /* LaunchScreen.storyboard */,
 				1A34752B1FB162F4007E3E32 /* Info.plist */,
 				1A3475231FB162F4007E3E32 /* PrettyPets.xcdatamodeld */,
+				1A36D5281FBFE2000096CF20 /* RegUsuarioController.swift */,
+				1A36D52A1FBFE3E90096CF20 /* RegMascotaController.swift */,
+				1AC642F01FBFFCCE00FD5290 /* ActualizarController.swift */,
+				1AC642F21FBFFDA800FD5290 /* AddVacunaController.swift */,
+				1AC642F41FBFFE5500FD5290 /* AddMascotaController.swift */,
 			);
 			path = PrettyPets;
 			sourceTree = "<group>";
@@ -276,12 +288,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A34751F1FB162F4007E3E32 /* ViewController.swift in Sources */,
-				1A77CE731FBB954000767576 /* RegistroMascotaController.swift in Sources */,
-				1A77CE711FBB928600767576 /* RegistroUsuarioController.swift in Sources */,
 				1A34751D1FB162F4007E3E32 /* AppDelegate.swift in Sources */,
 				1A0FB9671FBE49E10020434F /* VeterinarioController.swift in Sources */,
+				1AC642F51FBFFE5500FD5290 /* AddMascotaController.swift in Sources */,
 				1A3475251FB162F4007E3E32 /* PrettyPets.xcdatamodeld in Sources */,
+				1A36D52D1FBFE47A0096CF20 /* BitacoraController.swift in Sources */,
+				1A36D52B1FBFE3E90096CF20 /* RegMascotaController.swift in Sources */,
+				1AC642F11FBFFCCE00FD5290 /* ActualizarController.swift in Sources */,
+				1AC642F31FBFFDA800FD5290 /* AddVacunaController.swift in Sources */,
 				1A0FB9651FBE49C10020434F /* PerfilController.swift in Sources */,
+				1A36D5291FBFE2000096CF20 /* RegUsuarioController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

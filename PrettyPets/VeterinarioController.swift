@@ -20,7 +20,6 @@ class VeterinarioController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func goToRegister(_ sender: UIButton) {
-    }
+  
     
 }
