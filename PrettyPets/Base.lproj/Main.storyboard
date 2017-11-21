@@ -83,7 +83,8 @@
                                             <color key="titleColor" red="0.99230996449999997" green="1" blue="0.96992800339999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BA7-0J-Avj" kind="show" id="Cp2-ga-bYx"/>
+                                            <action selector="LoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qH7-hI-aCQ"/>
+                                            <segue destination="BA7-0J-Avj" kind="show" identifier="segue2" id="Cp2-ga-bYx"/>
                                         </connections>
                                     </button>
                                 </subviews>

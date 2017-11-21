@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import FirebaseAuth
+import Firebase
 class ViewController: UIViewController {
 
    
@@ -24,6 +25,23 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func LoginButton(_ sender: UIButton) {
     
+            Auth.auth().signIn(withEmail: email.text!, password: password.text!, completion: {(user,error) in
+                if user != nil{
+                    print("Logueado exitosamente")
+                    //Si el Login es exitoso continua al menu
+                    self.performSegue(withIdentifier: "segue2", sender: self)
+                    
+                }else{
+                    if let MiniError = error?.localizedDescription{
+                        print("Ha ocurrido un error en el LOGUEO: ")
+                        print(MiniError)
+                    }else{
+                        print("Parece un error más grave chiquillo")
+                    }
+                }
+            })
+    }
 }
 
