@@ -26,7 +26,7 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
         super.viewDidLoad()
         
         if Auth.auth().currentUser?.uid == nil {
-            //LogOut()
+            logout()
         }
 
         setupProfile()
@@ -47,14 +47,14 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
 
            // profile_image.layer.cornerRadius = profile_image.frame.size.width/2
            // profile_image.clipsToBounds = true
-           let uid = Auth.auth().currentUser?.uid
-            databaseRef.child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+          // let uid = Auth.auth().currentUser?.uid
+            /*databaseRef.child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
                 if let dict = snapshot.value as? [String: AnyObject]{
                     self.nombreLabel.text = dict["nombre"] as? String
                     if let profileImageURL = dict["pic"] as? String
                     {
-                        _ = URL(string: profileImageURL)
-                     /*   URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
+                        let url = URL(string: profileImageURL)
+                       URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
                             if error != nil {
                                 print(error!)
                                 return
@@ -62,15 +62,19 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
                             DispatchQueue.main.async {
                                 self.profile_image?.image = UIImage(data: data!)
                             }
-                        }).resume() */
+                        }).resume()
                     }
                 }
-            })
+            })*/
         
 
     }
     
     @IBAction func LogOut(_ sender: UIButton) {
+        logout()
+    }
+    
+    func logout () {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let loginViewController = storyboard.instantiateViewController(withIdentifier: "login")
         present(loginViewController, animated: true, completion: nil)
