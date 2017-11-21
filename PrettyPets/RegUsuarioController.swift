@@ -72,9 +72,18 @@ class RegUsuarioController: UIViewController {
             return
         }
         Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
-            if error != nil {
-                print(error!)
-                return
+            if user != nil{
+                print("Logueado exitosamente")
+                //Si el Login es exitoso continua al menu
+                self.performSegue(withIdentifier: "segue", sender: self)
+                
+            }else{
+                if let MiniError = error?.localizedDescription{
+                    print("Ha ocurrido un error en el LOGUEO: ")
+                    print(MiniError)
+                }else{
+                    print("Parece un error más grave chiquillo")
+                }
             }
             guard let uid = user?.uid else {
                 return
