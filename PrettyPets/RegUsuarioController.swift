@@ -23,8 +23,7 @@ class RegUsuarioController: UIViewController {
     @IBOutlet weak var siguienteButton: UIButton!
     
     var genero:String!
-    let ref = Database.database().reference(fromURL: <#T##String#>)
-    
+    let ref = Database.database().reference(fromURL: "https://prettypets-652fe.firebaseio.com/")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,9 +50,7 @@ class RegUsuarioController: UIViewController {
         }
         
     }
-    
-    @IBAction func siguienteButtonTappped(_ sender:UIButton){
-        
+    @IBAction func siguiente(_ sender: UIButton) {
         guard let nombre = nombre.text else {
             print("nombre issue")
             return
@@ -83,7 +80,7 @@ class RegUsuarioController: UIViewController {
                 return
             }
             let userReference = self.ref.child("users").child(uid)
-            let values = ["nombre": nombre, "direccion": direccion, "contacto": contacto, "email": email, "pic":""]
+            let values = ["nombre": nombre, "direccion": direccion, "contacto": contacto, "email": email, "pic":"", "pets":""]
             
             userReference.updateChildValues(values, withCompletionBlock: { (error, ref) in
                 if error != nil {
@@ -95,6 +92,6 @@ class RegUsuarioController: UIViewController {
         })
         
     }
-    
-    
 }
+
+
