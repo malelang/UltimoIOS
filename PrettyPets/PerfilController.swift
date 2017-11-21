@@ -45,8 +45,8 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
     func setupProfile(){
         
 
-            profile_image.layer.cornerRadius = profile_image.frame.size.width/2
-            profile_image.clipsToBounds = true
+           // profile_image.layer.cornerRadius = profile_image.frame.size.width/2
+           // profile_image.clipsToBounds = true
            let uid = Auth.auth().currentUser?.uid
             databaseRef.child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
                 if let dict = snapshot.value as? [String: AnyObject]{
@@ -54,7 +54,7 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
                     if let profileImageURL = dict["pic"] as? String
                     {
                         let url = URL(string: profileImageURL)
-                        URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
+                     /*   URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
                             if error != nil {
                                 print(error!)
                                 return
@@ -62,7 +62,7 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
                             DispatchQueue.main.async {
                                 self.profile_image?.image = UIImage(data: data!)
                             }
-                        }).resume()
+                        }).resume() */
                     }
                 }
             })
