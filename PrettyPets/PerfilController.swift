@@ -26,7 +26,7 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
         super.viewDidLoad()
         
         if Auth.auth().currentUser?.uid == nil {
-            logout()
+            //LogOut()
         }
 
         setupProfile()
@@ -53,7 +53,7 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
                     self.nombreLabel.text = dict["nombre"] as? String
                     if let profileImageURL = dict["pic"] as? String
                     {
-                        let url = URL(string: profileImageURL)
+                        _ = URL(string: profileImageURL)
                      /*   URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
                             if error != nil {
                                 print(error!)
@@ -70,7 +70,7 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
 
     }
     
-    func logout(){
+    @IBAction func LogOut(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let loginViewController = storyboard.instantiateViewController(withIdentifier: "login")
         present(loginViewController, animated: true, completion: nil)

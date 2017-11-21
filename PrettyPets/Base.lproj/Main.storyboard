@@ -260,12 +260,22 @@
                                     <action selector="uploadImageButton:" destination="3s9-6S-778" eventType="touchUpInside" id="fXA-LH-j62"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71H-U2-ixK">
+                                <rect key="frame" x="286" y="421" width="55" height="30"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="LogOut:" destination="3s9-6S-778" eventType="touchUpInside" id="p9n-Uz-GVt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="U5J-uq-6NN" firstAttribute="top" secondItem="71H-U2-ixK" secondAttribute="bottom" constant="18" id="0b5-fw-700"/>
                             <constraint firstItem="jog-3u-UUm" firstAttribute="bottom" secondItem="nc8-B7-WKj" secondAttribute="bottom" id="7pt-3E-WpT"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="71H-U2-ixK" secondAttribute="trailing" constant="20" symbolic="YES" id="H7c-Oa-AEY"/>
                             <constraint firstItem="jog-3u-UUm" firstAttribute="top" secondItem="bqM-vm-lUl" secondAttribute="topMargin" constant="-31" id="Jdh-r0-zZT"/>
                             <constraint firstItem="nc8-B7-WKj" firstAttribute="bottom" secondItem="U5J-uq-6NN" secondAttribute="bottom" constant="109" id="KpX-DD-dD2"/>
+                            <constraint firstItem="71H-U2-ixK" firstAttribute="leading" secondItem="jog-3u-UUm" secondAttribute="trailing" constant="-89" id="KqV-BN-Fst"/>
                             <constraint firstItem="Rb3-qc-Fas" firstAttribute="leading" secondItem="jog-3u-UUm" secondAttribute="trailing" constant="-82" id="NM9-Rg-Gud"/>
                             <constraint firstItem="KVd-Pw-YcZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nc8-B7-WKj" secondAttribute="leading" id="RZf-CA-573"/>
                             <constraint firstItem="Rb3-qc-Fas" firstAttribute="leading" secondItem="U5J-uq-6NN" secondAttribute="leading" id="UEf-F8-qGe"/>
