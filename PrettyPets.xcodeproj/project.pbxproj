@@ -23,6 +23,7 @@
 		1AC642F11FBFFCCE00FD5290 /* ActualizarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC642F01FBFFCCE00FD5290 /* ActualizarController.swift */; };
 		1AC642F31FBFFDA800FD5290 /* AddVacunaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC642F21FBFFDA800FD5290 /* AddVacunaController.swift */; };
 		1AC642F51FBFFE5500FD5290 /* AddMascotaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC642F41FBFFE5500FD5290 /* AddMascotaController.swift */; };
+		1ADA33E51FC78977008150C6 /* PetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA33E41FC78977008150C6 /* PetsTableViewCell.swift */; };
 		9DCEE035B62685A09243D244 /* Pods_PrettyPetsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E71EE9F9F3DCE08C694225 /* Pods_PrettyPetsUITests.framework */; };
 		BEAB740DF1E2E8F44465F9FE /* Pods_PrettyPetsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC2410EFF99D76FBC4541A8 /* Pods_PrettyPetsTests.framework */; };
 		CC1222CC4614A569CE209185 /* Pods_PrettyPets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08363AC3221262CF56C29744 /* Pods_PrettyPets.framework */; };
@@ -70,6 +71,7 @@
 		1AC642F01FBFFCCE00FD5290 /* ActualizarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarController.swift; sourceTree = "<group>"; };
 		1AC642F21FBFFDA800FD5290 /* AddVacunaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVacunaController.swift; sourceTree = "<group>"; };
 		1AC642F41FBFFE5500FD5290 /* AddMascotaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMascotaController.swift; sourceTree = "<group>"; };
+		1ADA33E41FC78977008150C6 /* PetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsTableViewCell.swift; sourceTree = "<group>"; };
 		356895E6CF099FA9D984F507 /* Pods-PrettyPetsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPetsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrettyPetsUITests/Pods-PrettyPetsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5856C13EF281F9012D8FD05A /* Pods-PrettyPets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrettyPets/Pods-PrettyPets.debug.xcconfig"; sourceTree = "<group>"; };
 		8FC2410EFF99D76FBC4541A8 /* Pods_PrettyPetsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrettyPetsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +136,7 @@
 		1A34751B1FB162F4007E3E32 /* PrettyPets */ = {
 			isa = PBXGroup;
 			children = (
+				1ADA33E31FC788FD008150C6 /* cells */,
 				1A34751C1FB162F4007E3E32 /* AppDelegate.swift */,
 				1A34751E1FB162F4007E3E32 /* ViewController.swift */,
 				1A3475201FB162F4007E3E32 /* Main.storyboard */,
@@ -170,6 +173,14 @@
 				1A3475411FB162F4007E3E32 /* Info.plist */,
 			);
 			path = PrettyPetsUITests;
+			sourceTree = "<group>";
+		};
+		1ADA33E31FC788FD008150C6 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				1ADA33E41FC78977008150C6 /* PetsTableViewCell.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		ACDDFD4A4B0FAD234047BC44 /* Frameworks */ = {
@@ -501,6 +512,7 @@
 				1A0FB9671FBE49E10020434F /* VeterinarioController.swift in Sources */,
 				1AC642F51FBFFE5500FD5290 /* AddMascotaController.swift in Sources */,
 				1A3475251FB162F4007E3E32 /* PrettyPets.xcdatamodeld in Sources */,
+				1ADA33E51FC78977008150C6 /* PetsTableViewCell.swift in Sources */,
 				1A36D52D1FBFE47A0096CF20 /* BitacoraController.swift in Sources */,
 				1A36D52B1FBFE3E90096CF20 /* RegMascotaController.swift in Sources */,
 				1AC642F11FBFFCCE00FD5290 /* ActualizarController.swift in Sources */,

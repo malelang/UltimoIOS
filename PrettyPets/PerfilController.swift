@@ -10,7 +10,29 @@ import Foundation
 import UIKit
 import Firebase
 
-class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDataSource {
+    
+    
+    
+    //MARK: -DataSource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell{
+        var cell:UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "celda")
+        if (cell == nil){
+            cell = UITableViewCell(style: .default, reuseIdentifier: "celda")
+        }
+        
+        cell?.textLabel?.text="item \(indexPath.row)"
+        
+        return cell!
+    }
+   
+    
     
     //variables
     let storage = Storage.storage().reference()
