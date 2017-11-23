@@ -7,17 +7,22 @@
 //
 
 import Foundation
-
+import FirebaseDatabase
+import Firebase
+import FirebaseAuth
 import UIKit
 
 class RegMascotaController: UIViewController {
     @IBOutlet weak var nombre: UITextField!
     @IBOutlet weak var edad: UITextField!
-    @IBOutlet weak var petSex: UISegmentedControl!
-    @IBOutlet weak var petKind: UISegmentedControl!
+    //@IBOutlet weak var petSex: UISegmentedControl!
+    //@IBOutlet weak var petKind: UISegmentedControl!
     @IBOutlet weak var raza: UITextField!
     var sexo:String!
     var tipo:String!
+    
+    let ref = Database.database().reference(fromURL: "https://prettypets-652fe.firebaseio.com/")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,8 +33,29 @@ class RegMascotaController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func chooseSex(_ sender: Any) {
+    @IBAction func RegisterYourpet(_ sender: UIButton) {
+        guard let nombre = nombre.text else {
+            print("nombre issue")
+            return
+        }
+        guard let edad = edad.text else {
+            print("edad issue")
+            return
+        }
+       /* guard let petSex = petSex.text else {
+            print("sexo issue")
+            return
+        }
+        guard let petKind = petKind.text else {
+            print("mascota issue")
+            return
+        }*/
+        guard let raza = raza.text else {
+            print("raza issue")
+            return
+        }
+    }
+    /* @IBAction func chooseSex(_ sender: Any) {
         switch petSex.selectedSegmentIndex
         {
         case 0:
@@ -51,6 +77,6 @@ class RegMascotaController: UIViewController {
         default:
             break
         }
-    }
+    }*/
     
 }

@@ -99,6 +99,7 @@ class RegUsuarioController: UIViewController {
                 self.dismiss(animated: true, completion: nil)
             })
         })
+        Auth.auth().signIn(withEmail: email, password: pass, completion: nil)
         
     }
 }
