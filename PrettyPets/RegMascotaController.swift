@@ -54,7 +54,20 @@ class RegMascotaController: UIViewController {
             print("raza issue")
             return
         }
-    }
+        //Recuperamos información de usuario
+        let user = Auth.auth().currentUser
+        let uid = user?.uid
+        let reference = Database.database().reference(fromURL: "https://prettypets-652fe.firebaseio.com/").child("users").child(uid!).child("pets").childByAutoId()
+        
+        let values = ["nombre":nombre, "edad":edad, "raza":raza]
+        
+        reference.updateChildValues(values) { (error, reference) in
+            if error != nil {
+                print(error!)
+                return
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
     /* @IBAction func chooseSex(_ sender: Any) {
         switch petSex.selectedSegmentIndex
         {
@@ -79,4 +92,5 @@ class RegMascotaController: UIViewController {
         }
     }*/
     
+}
 }

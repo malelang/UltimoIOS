@@ -75,8 +75,7 @@ class RegUsuarioController: UIViewController {
             if user != nil{
                 print("Logueado exitosamente")
                 //Si el Login es exitoso continua al menu
-                self.performSegue(withIdentifier: "segue", sender: self)
-                
+                self.performSegue(withIdentifier: "segue10", sender: self)
             }else{
                 if let MiniError = error?.localizedDescription{
                     print("Ha ocurrido un error en el LOGUEO: ")

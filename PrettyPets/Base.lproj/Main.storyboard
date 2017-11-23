@@ -872,8 +872,7 @@
                                         <rect key="frame" x="106" y="0.0" width="72" height="30"/>
                                         <state key="normal" title="Siguiente"/>
                                         <connections>
-                                            <action selector="siguiente:" destination="Cr3-bU-Abe" eventType="touchUpInside" id="GTO-1F-P37"/>
-                                            <segue destination="zfH-Yx-L0D" kind="show" identifier="segue" id="0BN-io-ntO"/>
+                                            <segue destination="zfH-Yx-L0D" kind="show" identifier="segue10" id="0BN-io-ntO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1030,7 +1029,6 @@
                                     <color key="titleShadowColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="RegisterYourpet:" destination="zfH-Yx-L0D" eventType="touchUpInside" id="nxe-WK-nw0"/>
                                     <segue destination="BA7-0J-Avj" kind="show" identifier="seguemenu" id="Gbb-RC-5iU"/>
                                 </connections>
                             </button>
@@ -1058,8 +1056,6 @@
                     <connections>
                         <outlet property="edad" destination="7ml-hx-Mdx" id="IHj-94-roO"/>
                         <outlet property="nombre" destination="9bC-OO-SAg" id="9xD-U9-0wa"/>
-                        <outlet property="petKind" destination="sPa-dU-uyC" id="nOW-G9-kXY"/>
-                        <outlet property="petSex" destination="jEa-eu-nxa" id="yRb-7w-gne"/>
                         <outlet property="raza" destination="hXd-Pb-3T6" id="Iun-PS-cMF"/>
                     </connections>
                 </viewController>
