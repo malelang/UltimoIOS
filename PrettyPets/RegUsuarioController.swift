@@ -24,33 +24,8 @@ class RegUsuarioController: UIViewController {
     
     var genero:String!
     let ref = Database.database().reference(fromURL: "https://prettypets-652fe.firebaseio.com/")
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    @IBAction func chooseGenero(_ sender: Any) {
-        
-        
-        switch gender.selectedSegmentIndex
-        {
-        case 0:
-            genero = "h";
-        case 1:
-            genero = "m";
-        default:
-            break
-        }
-        
-    }
-    @IBAction func siguiente(_ sender: UIButton) {
+
+    @IBAction func nest2(_ sender: UIButton) {
         guard let nombre = nombre.text else {
             print("nombre issue")
             return
@@ -63,7 +38,7 @@ class RegUsuarioController: UIViewController {
             print("contacto issue")
             return
         }
-        guard let email = email.text else {
+        guard let email1 = email.text else {
             print("email issue")
             return
         }
@@ -71,14 +46,14 @@ class RegUsuarioController: UIViewController {
             print("pass issue")
             return
         }
-        Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
+        Auth.auth().createUser(withEmail: email.text!, password: pass, completion: { (user, error) in
             if user != nil{
-                print("Logueado exitosamente")
+                print("Registrado exitosamente")
                 //Si el Login es exitoso continua al menu
-                self.performSegue(withIdentifier: "segue10", sender: self)
+            //    self.performSegue(withIdentifier: "segue10", sender: self)
             }else{
                 if let MiniError = error?.localizedDescription{
-                    print("Ha ocurrido un error en el LOGUEO: ")
+                    print("Ha ocurrido un error en el Registro: ")
                     print(MiniError)
                 }else{
                     print("Parece un error más grave chiquillo")
@@ -88,7 +63,7 @@ class RegUsuarioController: UIViewController {
                 return
             }
             let userReference = self.ref.child("users").child(uid)
-            let values = ["nombre": nombre, "direccion": direccion, "contacto": contacto, "email": email, "pic":"","pets":""]
+            let values = ["nombre": nombre, "direccion": direccion, "contacto": contacto, "email": email1, "pic":"","pets":""]
             
             userReference.updateChildValues(values, withCompletionBlock: { (error, ref) in
                 if error != nil {
@@ -97,10 +72,9 @@ class RegUsuarioController: UIViewController {
                 }
                 self.dismiss(animated: true, completion: nil)
             })
+            
         })
-        Auth.auth().signIn(withEmail: email, password: pass, completion: nil)
+        //   Auth.auth().signIn(withEmail: email, password: pass, completion: nil)
         
     }
-}
-
-
+    }

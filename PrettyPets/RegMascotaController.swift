@@ -68,6 +68,7 @@ class RegMascotaController: UIViewController {
             }
             self.dismiss(animated: true, completion: nil)
         }
+        self.performSegue(withIdentifier: "seguemenu", sender: self)
     /* @IBAction func chooseSex(_ sender: Any) {
         switch petSex.selectedSegmentIndex
         {

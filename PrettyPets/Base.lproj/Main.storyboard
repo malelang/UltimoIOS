@@ -872,7 +872,8 @@
                                         <rect key="frame" x="106" y="0.0" width="72" height="30"/>
                                         <state key="normal" title="Siguiente"/>
                                         <connections>
-                                            <segue destination="zfH-Yx-L0D" kind="show" identifier="segue10" id="0BN-io-ntO"/>
+                                            <action selector="nest2:" destination="Cr3-bU-Abe" eventType="touchUpInside" id="xyr-wG-kIC"/>
+                                            <segue destination="zfH-Yx-L0D" kind="show" identifier="segue10" id="SNF-ba-Zwq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -904,7 +905,7 @@
                     <connections>
                         <outlet property="contacto" destination="nRu-5x-6pZ" id="f2h-DJ-bbs"/>
                         <outlet property="direccion" destination="bar-kA-d8H" id="fXp-Q6-Goc"/>
-                        <outlet property="email" destination="LQv-nF-ob9" id="WK6-qJ-9tw"/>
+                        <outlet property="email" destination="LQv-nF-ob9" id="OmX-yf-7cB"/>
                         <outlet property="gender" destination="lK3-F3-PUJ" id="UMC-ou-nQH"/>
                         <outlet property="nombre" destination="evb-gH-fh3" id="Qi7-6P-FKk"/>
                         <outlet property="pass" destination="ZDw-pX-RMh" id="nAx-Ye-G7x"/>
