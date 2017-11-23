@@ -68,7 +68,7 @@ class RegUsuarioController: UIViewController {
                     print (error!)
                     return
                 }
-                
+                //self.dismiss(animated: true, completion: nil)
             })
             
         })
