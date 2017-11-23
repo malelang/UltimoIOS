@@ -19,8 +19,7 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
     //outlets
     @IBOutlet weak var profile_image: UIImageView!
     @IBOutlet weak var nombreLabel: UILabel!
-    @IBOutlet weak var edadLabel: UILabel!
-    @IBOutlet weak var generoLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
