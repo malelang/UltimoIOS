@@ -49,8 +49,6 @@ class RegUsuarioController: UIViewController {
         Auth.auth().createUser(withEmail: email.text!, password: pass, completion: { (user, error) in
             if user != nil{
                 print("Registrado exitosamente")
-                //Si el Login es exitoso continua al menu
-            //    self.performSegue(withIdentifier: "segue10", sender: self)
             }else{
                 if let MiniError = error?.localizedDescription{
                     print("Ha ocurrido un error en el Registro: ")
@@ -70,11 +68,10 @@ class RegUsuarioController: UIViewController {
                     print (error!)
                     return
                 }
-                self.dismiss(animated: true, completion: nil)
+                
             })
             
         })
-        //   Auth.auth().signIn(withEmail: email, password: pass, completion: nil)
-        
+       Auth.auth().signIn(withEmail: email.text!, password: pass, completion: nil)
     }
     }
