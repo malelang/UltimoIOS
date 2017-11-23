@@ -89,7 +89,7 @@ class RegUsuarioController: UIViewController {
                 return
             }
             let userReference = self.ref.child("users").child(uid)
-            let values = ["nombre": nombre, "direccion": direccion, "contacto": contacto, "email": email, "pic":""]
+            let values = ["nombre": nombre, "direccion": direccion, "contacto": contacto, "email": email, "pic":"","pets":""]
             
             userReference.updateChildValues(values, withCompletionBlock: { (error, ref) in
                 if error != nil {
