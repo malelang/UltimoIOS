@@ -204,23 +204,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottom" insetsLayoutMarginsFromSafeArea="NO" image="perfil_bg" translatesAutoresizingMaskIntoConstraints="NO" id="jog-3u-UUm">
-                                <rect key="frame" x="0.0" y="33" width="375" height="585"/>
+                                <rect key="frame" x="0.0" y="-11" width="375" height="678"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perfil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVd-Pw-YcZ">
-                                <rect key="frame" x="155" y="100" width="65" height="36"/>
+                                <rect key="frame" x="155" y="56" width="65" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb3-qc-Fas">
-                                <rect key="frame" x="293" y="533" width="50" height="50"/>
+                                <rect key="frame" x="293" y="582" width="50" height="50"/>
                                 <state key="normal" image="rsz_60740"/>
                                 <connections>
                                     <segue destination="h20-u2-xlZ" kind="show" id="rSj-gY-jCu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5J-uq-6NN">
-                                <rect key="frame" x="293" y="469" width="52" height="40"/>
+                                <rect key="frame" x="293" y="518" width="52" height="40"/>
                                 <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="rsz_settings-24-512">
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -230,13 +230,13 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="efB-T6-3cL">
-                                <rect key="frame" x="67" y="165" width="221" height="125"/>
+                                <rect key="frame" x="67" y="121" width="221" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="h9z-ov-u6t"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsB-og-WWk">
-                                <rect key="frame" x="67" y="315" width="42" height="21"/>
+                                <rect key="frame" x="67" y="271" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -249,14 +249,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71H-U2-ixK">
-                                <rect key="frame" x="286" y="421" width="55" height="30"/>
+                                <rect key="frame" x="286" y="470" width="55" height="30"/>
                                 <state key="normal" title="Log Out"/>
                                 <connections>
                                     <action selector="LogOut:" destination="3s9-6S-778" eventType="touchUpInside" id="p9n-Uz-GVt"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dUL-Co-JH7">
-                                <rect key="frame" x="0.0" y="344" width="286" height="276"/>
+                                <rect key="frame" x="0.0" y="300" width="286" height="369"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaMascota" id="inA-hd-VFH" customClass="PetsTableViewCell" customModule="PrettyPets" customModuleProvider="target">
@@ -363,10 +363,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google-pixel-xl-new_droidviews" translatesAutoresizingMaskIntoConstraints="NO" id="xYl-u5-EcE">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="N0i-Nf-toy">
-                                <rect key="frame" x="30" y="133" width="315" height="450"/>
+                                <rect key="frame" x="30" y="89" width="315" height="450"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="0FI-qu-yGQ">
                                         <rect key="frame" x="0.0" y="0.0" width="157.5" height="382"/>
@@ -604,6 +604,10 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" red="0.99230996449999997" green="1" blue="0.96992800339999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Agregar"/>
+                                <connections>
+                                    <action selector="GuardarMascota:" destination="h20-u2-xlZ" eventType="touchUpInside" id="X5Z-UU-ABy"/>
+                                    <segue destination="3s9-6S-778" kind="show" id="Ppf-q6-N4T"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -625,6 +629,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1aV-MG-aJt"/>
                     </view>
+                    <connections>
+                        <outlet property="edad" destination="9GM-xM-UFS" id="SAl-fJ-OKV"/>
+                        <outlet property="nombre" destination="76n-32-QZI" id="9bW-Tt-1Ws"/>
+                        <outlet property="raza" destination="Az2-Bs-jeO" id="BBY-H2-u9n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qzi-ZQ-Cbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1191,6 +1200,7 @@
         <image name="rsz_settings-24-512" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Ppf-q6-N4T"/>
         <segue reference="Gbb-RC-5iU"/>
     </inferredMetricsTieBreakers>
 </document>

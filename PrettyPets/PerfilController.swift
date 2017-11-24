@@ -16,8 +16,7 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
     
     let ref = Database.database().reference(fromURL: "https://prettypets-652fe.firebaseio.com/")
     
- 
-    var data:[Mascota]=[]
+    //var data:[Mascota]=[]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +31,11 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
         
         setupProfile()
         
-        data = [
+        /*data = [
             Mascota(nombre:"Pluto", raza:"Pitbull",img:""),
             Mascota(nombre:"Margarita", raza:"Pastor Aleman",img:""),
             Mascota(nombre:"Juana", raza:"Dalmata",img:"")
-            ]
+            ]*/
     }
     //MARK: -DataSource
     //Numero de filas:
@@ -50,11 +49,13 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell{
         let cell:PetsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "celdaMascota") as! PetsTableViewCell
-        let Mascota = data[indexPath.row]
+       /* let Mascota = data[indexPath.row]
         cell.nombre.text = Mascota.nombre
         cell.raza.text = Mascota.raza
        // cell.img.text = Mascota.img
-        
+ 
+    */
+ 
         return cell
     }
    
