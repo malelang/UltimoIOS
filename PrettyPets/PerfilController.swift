@@ -53,9 +53,7 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
         cell.nombre.text = Mascota.nombre
         cell.raza.text = Mascota.raza
        // cell.img.text = Mascota.img
- 
     */
- 
         return cell
     }
    

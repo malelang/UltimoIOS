@@ -266,7 +266,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kdm-tp-ynV">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="kdm-tp-ynV">
                                                     <rect key="frame" x="0.0" y="0.0" width="65" height="43"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="65" id="24K-8p-Lis"/>
@@ -1187,6 +1187,7 @@
     <resources>
         <image name="49669990-Huevos-de-Pascua-pintados-en-colores-pastel-sobre-fondo-blanco-de-madera-concepto-de-Pascua-Foto-de-archivo" width="1300" height="912"/>
         <image name="Image" width="48" height="48"/>
+        <image name="Image-1" width="48" height="48"/>
         <image name="add-vacuna_bg" width="300" height="505"/>
         <image name="add-vet_bg" width="1345" height="976"/>
         <image name="google-pixel-xl-new_droidviews" width="1620" height="2880"/>
@@ -1200,6 +1201,7 @@
         <image name="rsz_settings-24-512" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="rSj-gY-jCu"/>
         <segue reference="Ppf-q6-N4T"/>
         <segue reference="Gbb-RC-5iU"/>
     </inferredMetricsTieBreakers>
