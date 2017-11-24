@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A0FB9651FBE49C10020434F /* PerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FB9641FBE49C10020434F /* PerfilController.swift */; };
 		1A0FB9671FBE49E10020434F /* VeterinarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FB9661FBE49E10020434F /* VeterinarioController.swift */; };
+		1A2F7B621FC7C83300BD57AF /* Mascota.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F7B611FC7C83300BD57AF /* Mascota.swift */; };
 		1A34751D1FB162F4007E3E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A34751C1FB162F4007E3E32 /* AppDelegate.swift */; };
 		1A34751F1FB162F4007E3E32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A34751E1FB162F4007E3E32 /* ViewController.swift */; };
 		1A3475221FB162F4007E3E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3475201FB162F4007E3E32 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		08363AC3221262CF56C29744 /* Pods_PrettyPets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrettyPets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A0FB9641FBE49C10020434F /* PerfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilController.swift; sourceTree = "<group>"; };
 		1A0FB9661FBE49E10020434F /* VeterinarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinarioController.swift; sourceTree = "<group>"; };
+		1A2F7B611FC7C83300BD57AF /* Mascota.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mascota.swift; sourceTree = "<group>"; };
 		1A3475191FB162F4007E3E32 /* PrettyPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettyPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A34751C1FB162F4007E3E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A34751E1FB162F4007E3E32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A2F7B601FC7C80B00BD57AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A2F7B611FC7C83300BD57AF /* Mascota.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1A3475101FB162F4007E3E32 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +146,7 @@
 		1A34751B1FB162F4007E3E32 /* PrettyPets */ = {
 			isa = PBXGroup;
 			children = (
+				1A2F7B601FC7C80B00BD57AF /* Models */,
 				1ADA33E31FC788FD008150C6 /* cells */,
 				1A34751C1FB162F4007E3E32 /* AppDelegate.swift */,
 				1A34751E1FB162F4007E3E32 /* ViewController.swift */,
@@ -422,9 +433,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PrettyPetsUITests/Pods-PrettyPetsUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -519,6 +533,7 @@
 				1AC642F31FBFFDA800FD5290 /* AddVacunaController.swift in Sources */,
 				1A0FB9651FBE49C10020434F /* PerfilController.swift in Sources */,
 				1A36D5291FBFE2000096CF20 /* RegUsuarioController.swift in Sources */,
+				1A2F7B621FC7C83300BD57AF /* Mascota.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

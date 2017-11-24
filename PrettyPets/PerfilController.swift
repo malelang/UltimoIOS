@@ -9,31 +9,55 @@
 import Foundation
 import UIKit
 import Firebase
+import FirebaseAuth
+
 
 class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDataSource {
     
+    let ref = Database.database().reference(fromURL: "https://prettypets-652fe.firebaseio.com/")
     
-    
+ 
+    var data:[Mascota]=[]
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if  Auth.auth().currentUser != nil {
+            let uid = Auth.auth().currentUser?.uid
+            let email = Auth.auth().currentUser?.email
+        }
+        
+        if Auth.auth().currentUser?.uid == nil {
+            logout()
+        }
+        
+        setupProfile()
+        
+        data = [
+            Mascota(nombre:"Pluto", raza:"Pitbull",img:""),
+            Mascota(nombre:"Margarita", raza:"Pastor Aleman",img:""),
+            Mascota(nombre:"Juana", raza:"Dalmata",img:"")
+            ]
+    }
     //MARK: -DataSource
+    //Numero de filas:
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
+            //data.count
     }
+    //Numero de secciones
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell{
-        var cell:UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "celda")
-        if (cell == nil){
-            cell = UITableViewCell(style: .default, reuseIdentifier: "celda")
-        }
+        let cell:PetsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "celdaMascota") as! PetsTableViewCell
+        let Mascota = data[indexPath.row]
+        cell.nombre.text = Mascota.nombre
+        cell.raza.text = Mascota.raza
+       // cell.img.text = Mascota.img
         
-        cell?.textLabel?.text="item \(indexPath.row)"
-        
-        return cell!
+        return cell
     }
    
-    
-    
     //variables
     let storage = Storage.storage().reference()
     let databaseRef = Database.database().reference()
@@ -42,17 +66,7 @@ class PerfilController: UIViewController, UIImagePickerControllerDelegate, UINav
     @IBOutlet weak var profile_image: UIImageView!
     @IBOutlet weak var nombreLabel: UILabel!
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if Auth.auth().currentUser?.uid == nil {
-            logout()
-        }
 
-        setupProfile()
-
-    }
     //actions
     @IBAction func uploadImageButton(_ sender: Any) {
         let picker = UIImagePickerController()
